@@ -1,0 +1,6 @@
+状态机持久化
+实际环境中，当前状态往往都是从持久化介质中实时获取的，Spring Statemachine
+通过实现StateMachinePersist接口，write和read当前状态机的状态
+
+动作监听
+定义动作监听类，StatemachineMonitor（名称随意），添加注解@WithStateMachine
